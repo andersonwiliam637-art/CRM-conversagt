@@ -1,0 +1,6 @@
+{
+  "name": "ConversaGT - Omnichannel AI Suite & CRM",
+  "description": "Plataforma omnicanal de lujo con IA Google Gemini, CRM conversacional, base de conocimiento RAG, pasarelas de pago (Tarjeta, PayPal, Transferencias) y centro legal integral.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

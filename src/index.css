@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    /* Sophisticated deep slate-neutral base (60% dominant canvas) */
+    background-color: #030712;
+    color: #f3f4f6;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "tnum";
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  .font-tabular {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 65, 85, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(71, 85, 105, 0.6);
+}
+
+/* Refined luxury panels - Subtle depth over bold gradients */
+.luxury-glass {
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.luxury-glass-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-glass-hover:hover {
+  background: rgba(30, 41, 59, 0.6);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.subtle-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* ====================================================
+   LEXUS-GRADE 4D LUXURY VISUAL SUITE (OBSIDIAN & GOLD)
+   ==================================================== */
+.lexus-obsidian {
+  background: radial-gradient(circle at 50% 0%, #111827 0%, #080c14 60%, #030712 100%);
+}
+
+.lexus-gold-badge {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(245, 158, 11, 0.05) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  color: #f6d860;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+}
+
+.lexus-gold-border {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 4px 20px -2px rgba(212, 175, 55, 0.08);
+}
+
+.lexus-glow-emerald {
+  box-shadow: 0 0 25px -3px rgba(16, 185, 129, 0.25);
+}
+
+.lexus-card-4d {
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.lexus-card-4d:hover {
+  transform: translateY(-4px) rotateX(1.5deg) rotateY(-1.5deg);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 25px -5px rgba(212, 175, 55, 0.18);
+  border-color: rgba(212, 175, 55, 0.45);
+}
+
+@keyframes float4D {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(0.4deg);
+  }
+}
+
+.animate-float-4d {
+  animation: float4D 6s ease-in-out infinite;
+}
